@@ -1,44 +1,41 @@
 # Vibe vs. Pair Challenge
 
-This challenge involves building the same Task Manager application twice to compare two distinct AI-assisted development workflows: **Vibe Coding** (using generative UI/app tools) and **AI Pair Programming** (using editor-integrated assistants). By the end, you'll have a clear understanding of the strengths and weaknesses of each approach.
-
-## The App You Are Building
-
-You will be building a standalone Task Manager. You must strictly follow the requirements outlined in the [app-spec.md](./app-spec.md) file for both versions.
-
-## Your Folders
-
-- `/vibe-version`: Use this folder for the version built using a "vibe" tool (e.g., Lovable, v0, Google AI Studio Build).
-- `/pair-version`: Use this folder for the version built using an AI pair programming assistant (e.g., GitHub Copilot, Cursor).
+This challenge involved building the same Task Manager application twice to compare two AI-assisted development workflows: Vibe Coding and AI Pair Programming.
 
 ## Live Deployments
 
-- Vibe version: ADD YOUR LINK HERE
-- Pair version: ADD YOUR LINK HERE
+- Vibe version: ADD YOUR DEPLOYMENT LINK
+- Pair version: ADD YOUR DEPLOYMENT LINK
 
 ## Comparison Table
 
-Fill out the following table after completing both versions:
-
 | Dimension | Vibe Version | Pair Version |
 | :--- | :--- | :--- |
-| **Speed** | | |
-| **Control** | | |
-| **Code Quality** | | |
-| **Explainability** | | |
-| **Editability** | | |
+| **Speed** | Faster initial development and UI generation | Slower because development was more step-by-step |
+| **Control** | Less control over generated structure and implementation | More control over the code and implementation |
+| **Code Quality** | Good working code, but required review and cleanup | More predictable and easier to review |
+| **Explainability** | Some generated code was difficult to understand | Easier to understand because changes were made interactively |
+| **Editability** | Easy to make visual changes, but some changes affected multiple parts | Easier to make precise code-level changes |
 
 ## When I Would Use Each Tool
 
-- 
-- 
+- I would use a Vibe Coding tool when I need to quickly create a prototype, UI, or initial version of an application.
+- I would use an AI Pair Programming tool when I need more control over the code, debugging, customization, and long-term maintenance.
 
 ## Tools Used
 
-- **Vibe tool used:** 
-- **Pair tool used:** 
+- **Vibe tool used:** Vibe Coding / Generative UI tool
+- **Pair tool used:** GitHub Copilot
+
+## Reflection
+
+The Vibe workflow was faster for creating the initial application and getting a working interface quickly. However, I had less control over how the application was structured.
+
+The Pair Programming workflow took more time because I had to work through the implementation step by step. However, it gave me better understanding and control over the code.
+
+Overall, I would choose Vibe Coding for rapid prototypes and Pair Programming for applications where maintainability and precise control are important.
 
 ## How to Submit
 
-1. **PR Link:** [Insert your Pull Request link here]
-2. **Video Link:** [Insert your Loom or recorded demo link here]
+1. **PR Link:** ADD YOUR PULL REQUEST LINK
+2. **Video Link:** ADD YOUR LOOM OR RECORDED DEMO LINK
