@@ -39,3 +39,8 @@ Overall, I would choose Vibe Coding for rapid prototypes and Pair Programming fo
 
 1. **PR Link:** ADD YOUR PULL REQUEST LINK
 2. **Video Link:** ADD YOUR LOOM OR RECORDED DEMO LINK
+
+## Live Deployments
+
+- Vibe version: [**project-engineering-kappa.vercel.app**](https://project-engineering-kappa.vercel.app/)
+- Pair version: [**project-engineering-v8yp.vercel.app**](https://project-engineering-v8yp.vercel.app/)
