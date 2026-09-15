@@ -1,6 +1,6 @@
 import React from 'react';
 import { updateTaskStatus, deleteTaskFromApi } from '../services/api';
-import { Trash2, Check } from 'lucide-react';
+import { Trash2, Check, Star } from 'lucide-react';
 
 const TaskCard = ({ task, onTaskUpdated }) => {
   const handleToggle = async () => {
@@ -22,19 +22,46 @@ const TaskCard = ({ task, onTaskUpdated }) => {
   };
 
   return (
-    <div className={`task-card-v2 animate-fade ${task.completed ? 'completed' : ''}`}>
+    <div
+      className={`task-card-v2 animate-fade ${
+        task.completed ? 'completed' : ''
+      }`}
+    >
       <div className="task-main">
-        <div 
-          className={`custom-checkbox ${task.completed ? 'checked' : ''}`}
+        <div
+          className={`custom-checkbox ${
+            task.completed ? 'checked' : ''
+          }`}
           onClick={handleToggle}
         >
-          {task.completed && <Check size={16} strokeWidth={4} />}
+          {task.completed && (
+            <Check size={16} strokeWidth={4} />
+          )}
         </div>
-        <span className="task-text">{task.title}</span>
-        {/* TODO: support important tasks in future version */}
+
+        <span className="task-text">
+          {task.title}
+        </span>
+
+        {task.important && (
+          <span
+            title="Important task"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              marginLeft: '0.5rem'
+            }}
+          >
+            <Star size={18} fill="currentColor" />
+          </span>
+        )}
       </div>
 
-      <button onClick={handleDelete} className="action-btn" title="Delete Task">
+      <button
+        onClick={handleDelete}
+        className="action-btn"
+        title="Delete Task"
+      >
         <Trash2 size={18} />
       </button>
     </div>
